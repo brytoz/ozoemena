@@ -123,6 +123,42 @@ export const Check: React.FC = () => {
               out of the box. No need to install anything else.
             </p>
           </div>
+
+          <div className="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+            <div
+              className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
+              style={{
+                backgroundImage:
+                  "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240)",
+              }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="icon icon-tabler icon-tabler-tools"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"></path>
+                <line x1="14.5" y1="5.5" x2="18.5" y2="9.5"></line>
+                <polyline points="12 8 7 3 3 7 8 12"></polyline>
+                <line x1="7" y1="8" x2="5.5" y2="9.5"></line>
+                <polyline points="16 12 21 17 17 21 12 16"></polyline>
+                <line x1="16" y1="17" x2="14.5" y2="18.5"></line>
+              </svg>
+            </div>
+            <h3 className="mt-6 text-gray-400">Fully Featured</h3>
+            <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
+              Everything you need to succeed and launch your landing page, right
+              out of the box. No need to install anything else.
+            </p>
+          </div>
         </div>
 
         <div
