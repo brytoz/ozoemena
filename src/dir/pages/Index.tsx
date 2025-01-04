@@ -14,7 +14,7 @@ const Index: React.FC = () => {
       
       <div className="h-24 md:h-32" />
       <Projects /> 
-      {/* <Check /> */}
+      <Check />
     </Fragment>
   );
 };

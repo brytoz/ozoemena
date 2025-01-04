@@ -1,8 +1,8 @@
 import React from "react";
 
-interface CardsInterface {
-  // datas : () => Promise(void)
-}
+// interface CardsInterface {
+//   // datas : () => Promise(void)
+// }
 
 export const Cards: React.FC = () => {
   const data = [
