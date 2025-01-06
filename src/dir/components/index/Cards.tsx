@@ -41,14 +41,15 @@ export const Cards: React.FC = () => {
       </div> */}
       <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
         Tailor your landing page's look and feel, from the color scheme to the
-        font size, to the design of the page.. this is the first one. make sure you change import {  } from '';
+        font size, to the design of the page.. this is the first one. make sure
+        you change import {} from '';
       </p>
       <h3 className="mt-6 text-gray-400 flex justify-center space-x-2">
         {data &&
           data?.map((x, y) => (
-            <div className="bg-red-300 rounded px-1 text-xs" tabIndex={y}>
-              {x.data}
-            </div>
+            <ul className="*:rounded *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10 text-xs">
+              <li>{x.data}</li>
+            </ul>
           ))}
       </h3>
     </div>
