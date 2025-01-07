@@ -42,7 +42,7 @@ export const Cards: React.FC = () => {
       <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
         Tailor your landing page's look and feel, from the color scheme to the
         font size, to the design of the page.. this is the first one. make sure
-        you change import {} from '';
+        you
       </p>
       <h3 className="mt-6 text-gray-400 flex justify-center space-x-2">
         {data &&
