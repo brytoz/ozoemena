@@ -18,7 +18,9 @@ export const Check: React.FC = () => {
           <p className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
             Our templates allow for maximum customization. No technical skills
             required – our intuitive design tools let you get the job done
-            easily.
+            easily. 
+
+            remember to check the digital uplift thing
           </p>
         </div>
 
