@@ -7,9 +7,6 @@ export const CardsT = () => {
     { id: 1, data: "one" },
     { id: 2, data: "two" },
     { id: 3, data: "three" },
-    { id: 3, data: "three" },
-    { id: 3, data: "three" },
-    { id: 3, data: "three" },
   ];
     return (
       <div className="overflow-hidden rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
