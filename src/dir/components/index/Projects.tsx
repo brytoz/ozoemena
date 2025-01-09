@@ -3,7 +3,7 @@ import { Cards } from "./Cards";
 
 const Projects: React.FC = () => {
   return (
-    <div className="bg-black text-white font-sans px-6 md:px-20">
+    <div className="bg-black text-white font-sans px-6 md:px-20 mb-12">
       <div className="text-center md:text-left md:space-y-6">
         <h1 className="text-6xl md:text-8xl font-serif pb-8">Projects</h1>
       </div>

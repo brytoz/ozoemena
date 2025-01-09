@@ -21,7 +21,7 @@ const Header: React.FC = () => {
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden">
               <img
                 src="/path/to/image.jpg"
-                alt="Chad Gibbons"
+                alt="Brytoz"
                 className="w-full h-full object-cover"
               />
               <p className="text-lg font-medium poppins-regular ">

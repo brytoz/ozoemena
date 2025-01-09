@@ -7,7 +7,7 @@ const Nav: React.FC = () => {
   return (
     <div>
       <nav className="flex justify-between items-center px-6 py-4 md:px-12">
-        <div className="text-2xl font-bold">Chad Gibbons</div>
+        <div className="text-2xl font-bold">Brytoz</div>
         <nav className="hidden md:flex space-x-6">
           <a href="#home" className="hover:underline">
             Home
