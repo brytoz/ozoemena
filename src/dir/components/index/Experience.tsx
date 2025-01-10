@@ -26,9 +26,14 @@ const Experience: React.FC = () => {
             year="2019 — 2023"
           />
           <ExpeCard
+            company="AC Harmony"
+            position="Data transformation - Intern"
+            year="2019"
+          />
+          <ExpeCard
             company="Freelancer"
             position="Fullstack Developer"
-            year="2016 — 2019"
+            year="2017 — 2019"
           />
         </div>
       </section>
