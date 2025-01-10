@@ -2,7 +2,7 @@ import React from "react";
 // import { Camera } from "lucide-react";
 import { Cards } from "./Cards";
 
- const Project: React.FC = () => {
+const Project: React.FC = () => {
   return (
     <div className="bg-black">
       <section
@@ -25,24 +25,30 @@ import { Cards } from "./Cards";
             year="2022"
           />
 
-<Cards
+          <Cards
+            topic="ByteStore"
+            description="A simple inventory and checkout system for a grocery store. Created with C++. Remains my first ever project worked on. "
+            data={[{ id: 1, data: "C++" }]}
+            link="https://github.com/brytoz/ByteStore"
+            year="2018"
+          />
+
+          <Cards
             topic="FFMpeg"
-            description="Tailor your landing page's look and feel, from the color scheme to the
-        font size, to the design of the page."
+            description="A vanilla video editing made with ffmpeg and php. This app has low design but was more focused on the backend."
             data={[
               { id: 1, data: "HTML" },
               { id: 1, data: "CSS" },
               { id: 2, data: "PHP" },
               { id: 3, data: "FFMpeg" },
             ]}
-            link="https://loveafrica.app"
-            year="2018"
+            link="https://github.com/brytoz/FFmpeg-Image-video"
+            year="2019"
           />
 
-
-<Cards
+          <Cards
             topic="Thesis Mgt System"
-            description="School thesis management system. Uploaded 2022"
+            description="School thesis management system. A fullstack vanilla project that manages postgraduate and masters student for thesis submission, approval and grading. Uploaded to github in 2022"
             data={[
               { id: 1, data: "HTML" },
               { id: 2, data: "CSS" },
@@ -55,12 +61,64 @@ import { Cards } from "./Cards";
           />
 
           <Cards
+            topic="EasyStreams"
+            description="A fullstack video streaming website that shows list of available matches and streaming platforms to view the matches. Previously live at easystreams.com"
+            data={[
+              { id: 1, data: "React" },
+              { id: 3, data: "NodeJs" },
+              { id: 4, data: "MySql" },
+              // { id: 3, data: "Fullstack" },
+            ]}
+            link="https://github.com/brytoz/easystreams"
+            year="2023"
+          />
+
+          <Cards
+            topic="Anameo"
+            description="A play-around frontend application focused on API fetch and sorting chuck noris jokes."
+            data={[
+              { id: 1, data: "TypeScript" },
+              { id: 3, data: "React" },
+              // { id: 4, data: "MySql" },
+              // { id: 3, data: "Fullstack" },
+            ]}
+            link="https://anameo.netlify.app"
+            year="2022"
+          />
+
+<Cards
+            topic="Mint My Token"
+            description="A ERC-721 web3 project that mints your token. using the Harmony ONE protocol."
+            data={[
+              { id: 3, data: "TypeScript" },
+              { id: 1, data: "Web3" },
+              { id: 4, data: "Solidity" },
+              { id: 2, data: "Ether.Js" },
+            ]}
+            link="https://mintmytoken.netlify.app"
+            year="2022"
+          />
+
+
+<Cards
+            topic="Mutant Football Manager"
+            description="A ERC-721 and ERC-20 web3 project. A Hackhathon participated with a section of my team. Using the Harmony ONE protocol."
+            data={[
+              { id: 3, data: "TypeScript" },
+              { id: 1, data: "Web3" },
+              { id: 4, data: "Solidity" },
+              { id: 2, data: "Ether.Js" },
+            ]}
+            link="https://mutant-football.netlify.app"
+            year="2022"
+          />
+
+          <Cards
             topic="SecureSeedFund"
-            description="Tailor your landing page's look and feel, from the color scheme to the
-        font size, to the design of the page."
+            description="Designed and developed the backend infrastructure, services, payment system and server administration setup."
             data={[
               { id: 1, data: "Backend" },
-              { id: 1, data: "TypeScript" },
+              // { id: 1, data: "Redacted" },
             ]}
             link="https://secureseedfund.com"
             year="2024"
@@ -75,7 +133,7 @@ import { Cards } from "./Cards";
               { id: 2, data: "CMS" },
             ]}
             link="https://gigscor.com"
-            year="2013"
+            year="2023-2024"
           />
 
           <Cards
@@ -87,7 +145,7 @@ import { Cards } from "./Cards";
               { id: 2, data: "CMS" },
             ]}
             link="https://kmanalysis.com"
-            year="2013"
+            year="2023-2024"
           />
         </div>
 
@@ -110,5 +168,4 @@ import { Cards } from "./Cards";
   );
 };
 
-
-export default Project
+export default Project;

@@ -48,7 +48,7 @@ export const Cards: React.FC<CardsProps> = ({
         </svg>
       </div>
       <h3 className="mt-6 text-gray-400">
-        <a href={link} target="_blank" className="hover:underline">
+        <a href={link} target="_blank" className="hover:underline hover:text-blue-300">
           {topic}
         </a>
       </h3>
