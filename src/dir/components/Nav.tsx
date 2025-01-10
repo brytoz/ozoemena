@@ -15,9 +15,6 @@ const Nav: React.FC = () => {
           <a href="#about" className="hover:underline">
             About
           </a>
-          <a href="#background" className="hover:underline">
-            Background
-          </a>
           <a href="#gallery" className="hover:underline">
             Gallery
           </a>

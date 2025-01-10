@@ -1,24 +1,32 @@
 import React from "react";
 
-// interface CardsInterface {
-//   // datas : () => Promise(void)
-// }
+interface CardsProps {
+  topic: string;
+  description: string;
+  link: string;
+  year: string;
+  data?: Array<{ id: number; data: string }>;
+}
 
-export const Cards: React.FC = () => {
-  const data = [
-    { id: 1, data: "one" },
-    { id: 2, data: "two" },
-    { id: 3, data: "three" },
-  ];
-
+export const Cards: React.FC<CardsProps> = ({
+  topic,
+  description,
+  data,
+  link,
+  year,
+}) => {
   return (
-    <div className="text-sm rounded-md border border-neutral-800 bg-neutral-900/50 px-2 text-center shadow">
-      {/* <div
+    <div className="relative overflow-hidden rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+      <div className="absolute top-1 left-1 text-[8px] md:text-[12px] opacity-30">
+        {year}
+      </div>
+
+      <div
         className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
-        // style={{
-        //   backgroundImage:
-        //     "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240)",
-        // }}
+        style={{
+          backgroundImage:
+            "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%); border-color: rgb(93, 79, 240)",
+        }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -38,20 +46,24 @@ export const Cards: React.FC = () => {
           <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
           <line x1="17" y1="17" x2="17" y2="17.01"></line>
         </svg>
-      </div> */}
-      <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-        Tailor your landing page's look and feel, from the color scheme to the
-        font size, to the design of the page.. this is the first one. make sure
-        you
+      </div>
+      <h3 className="mt-6 text-gray-400">
+        <a href={link} target="_blank" className="hover:underline">
+          {topic}
+        </a>
+      </h3>
+      <p className="text-xs my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
+        {description}
       </p>
-      <h3 className="mt-6 text-gray-400 flex justify-center space-x-2">
+
+      <div className="mt-6 text-gray-400 flex justify-center space-x-2">
         {data &&
           data?.map((x) => (
-            <ul className="*:rounded *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10 text-xs">
+            <ul className="*:rounded *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10 text-[12px] md:text-xs">
               <li>{x.data}</li>
             </ul>
           ))}
-      </h3>
+      </div>
     </div>
   );
 };

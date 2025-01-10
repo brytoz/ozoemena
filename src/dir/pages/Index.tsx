@@ -1,20 +1,25 @@
 import React, { Fragment } from "react";
 import Header from "../components/index/Header";
-import Background from "../components/index/Background";
-import Projects from "../components/index/Projects";
-import { Check } from "../components/index/Check";
+import About from "../components/index/About";
+import Project from "../components/index/Project";
 import { Alumin } from "../components/index/Alumin";
+import Experience from "../components/index/Experience";
+import Tools from "../components/index/Tools";
+import Footer from "../components/index/Footer";
 
 const Index: React.FC = () => {
   return (
     <Fragment>
       <Header />
-      <Background /> 
+      <About />
       <Alumin />
-      
+
       <div className="h-24 md:h-32" />
-      <Projects /> 
-      <Check />
+      <Tools />
+      <Experience />
+      <Project />
+
+      <Footer />
     </Fragment>
   );
 };
