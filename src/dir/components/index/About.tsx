@@ -15,10 +15,12 @@ const About: React.FC<AboutProps> = ({id}) => {
           </h1>
         </div>
         <div className="flex flex-wrap gap-4 justify-around md:justify-start ">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
-          ipsam quisquam obcaecati alias quia, delectus reprehenderit magnam
-          cupiditate fugit consequatur unde voluptas quidem in vitae ullam
-          tempore dolorum quaerat optio.
+          Thank you for coming. I am Ozoemena Bright, a fullstack developer, now backend heavy and mostly passionate about Applications, AI, and Blockchain Technology.
+
+          <p>
+            With over six years of experience in internet technology,  I am a highly motivated software and mobile app developer with robust background in coding and problem solving solutions, coupled with a passion for creating impactful and lasting solutions that benefits users. With five years of professional experience working on diverse projects, I have demonstrated strong leadership, technical expertise, and a commitment to delivering reusable user-focused applications. </p> 
+
+            <p> My goal is to harness the power of technology to create and build software innovations and inclusivity, empowering organizations and individuals   alike.</p>
         </div>
       </section>
     </div>

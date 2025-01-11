@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link,  } from "react-scroll";
 const Nav: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolledNav, setScrolledNav] = useState(false);
   const [scrolledOffset, setScrolledOffset] = useState(0);
   const [scrollingDown, setScrollingDown] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, ] = useState(false);
   const [smallScreen, setSmallScreen] = useState(false);
 
   const detectScrollDirection = () => {
@@ -14,12 +14,7 @@ const Nav: React.FC = () => {
     setScrolledOffset(window.scrollY);
   };
 
-  const toggleMenu = () => {
-    if (smallScreen) {
-      setShowMenu(!showMenu);
-      document.body.classList.toggle("hide");
-    }
-  };
+ 
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

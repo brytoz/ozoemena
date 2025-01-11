@@ -46,6 +46,7 @@ const Tools: React.FC<ToolsProps> = ({ id }) => {
           <ToolsCard text="MondoDB" />
           <ToolsCard text="PostGres" />
           <ToolsCard text="Firebase" />
+          <ToolsCard text="RabbitMq" />
         </div>
       </section>
     </div>

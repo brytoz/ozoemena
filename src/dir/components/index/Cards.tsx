@@ -6,6 +6,7 @@ interface CardsProps {
   description: string;
   link: string;
   year: string;
+  type: string;
   data?: Array<{ id: number; data: string }>;
 }
 
@@ -15,12 +16,16 @@ export const Cards: React.FC<CardsProps> = ({
   data,
   link,
   year,
+  type,
 }) => {
   return (
     <div className="overflow-hid den rounded-md border border-neutral-800 bg-neutral-900/50 text-center shadow">
       <div className="px-8 pt-8 relative ">
-        <div className="absolute top-1 left-1 text-[8px] md:text-[12px] opacity-30">
+      <div className="absolute top-1 left-1 text-[8px] md:text-[12px] opacity-30">
           {year}
+        </div>
+        <div className="absolute top-1 right-1 text-[8px] md:text-[12px] opacity-30">
+          {type}
         </div>
 
         <div

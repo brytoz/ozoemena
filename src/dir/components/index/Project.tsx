@@ -6,25 +6,25 @@ interface ProjectProps {
   id: string;
 }
 
-const Project: React.FC<ProjectProps> = ({id}) => {
+const Project: React.FC<ProjectProps> = ({ id }) => {
   return (
-    <div id={`${id}`}  className="bg-black">
+    <div id={`${id}`} className="bg-black">
       <section
         id="features"
         className="relative block px-6 py-10 md:py-20 md:px-10  border-t border-b border-neutral-900 bg-neutral-900/30"
       >
         <div className="text-center md:text-left md:space-y-6">
           <h1 className="text-6xl md:text-8xl font-serif pb-8">Projects</h1>
+          <p className="text-gray-600 ">Some Projects</p>
         </div>
         <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-         
-
           <Cards
             topic="ByteStore"
             description="A simple inventory and checkout system for a grocery store. Created with C++. Remains my first ever project worked on. "
             data={[{ id: 1, data: "C++" }]}
             link="https://github.com/brytoz/ByteStore"
             year="2018"
+            type="Demo"
           />
 
           <Cards
@@ -38,6 +38,7 @@ const Project: React.FC<ProjectProps> = ({id}) => {
             ]}
             link="https://github.com/brytoz/FFmpeg-Image-video"
             year="2019"
+            type="Demo"
           />
 
           <Cards
@@ -52,9 +53,8 @@ const Project: React.FC<ProjectProps> = ({id}) => {
             ]}
             link="https://github.com/brytoz/ThesisMgt"
             year="2019"
+            type=""
           />
-
-     
 
           <Cards
             topic="Anameo"
@@ -67,6 +67,7 @@ const Project: React.FC<ProjectProps> = ({id}) => {
             ]}
             link="https://anameo.netlify.app"
             year="2022"
+            type="Demo"
           />
 
           <Cards
@@ -80,6 +81,7 @@ const Project: React.FC<ProjectProps> = ({id}) => {
             ]}
             link="https://mintmytoken.netlify.app"
             year="2022"
+            type="Live/Demo"
           />
 
           <Cards
@@ -93,8 +95,9 @@ const Project: React.FC<ProjectProps> = ({id}) => {
             ]}
             link="https://mutant-football.netlify.app"
             year="2022"
+            type="Demo"
           />
-               <Cards
+          <Cards
             topic="EasyStreams"
             description="A fullstack video streaming website that shows list of available matches and streaming platforms to view the matches. Previously live at easystreams.com"
             data={[
@@ -105,9 +108,10 @@ const Project: React.FC<ProjectProps> = ({id}) => {
             ]}
             link="https://github.com/brytoz/easystreams"
             year="2023"
+            type="Github"
           />
 
-<Cards
+          <Cards
             topic="LoveAfrica"
             description="Dating mobile app. social network that connects friends and strangers together. Creating  "
             data={[
@@ -116,6 +120,7 @@ const Project: React.FC<ProjectProps> = ({id}) => {
             ]}
             link="https://loveafrica.app/downloads"
             year="2022"
+            type="Live"
           />
 
           <Cards
@@ -127,9 +132,10 @@ const Project: React.FC<ProjectProps> = ({id}) => {
             ]}
             link="#"
             year="2024"
+            type="Live"
           />
 
-<Cards
+          <Cards
             topic="Gigscor"
             description="Web Application for getting jobs. worked on the backend, contributed to the frontend"
             data={[
@@ -139,6 +145,7 @@ const Project: React.FC<ProjectProps> = ({id}) => {
             ]}
             link="https://gigscor.com"
             year="2023-2024"
+            type="Live"
           />
 
           <Cards
@@ -151,6 +158,7 @@ const Project: React.FC<ProjectProps> = ({id}) => {
             ]}
             link="https://kmanalysis.com"
             year="2023-2024"
+            type="Live"
           />
 
           <Cards
@@ -162,9 +170,22 @@ const Project: React.FC<ProjectProps> = ({id}) => {
             ]}
             link="https://secureseedfund.com"
             year="2024"
+            type="Live"
           />
 
-          
+          <Cards
+            topic="Uptrise"
+            description="A crypto web trading application. Designed and developed the backend infrastructure, services, payment system and server administration setup."
+            data={[
+              { id: 1, data: "Backend" },
+              { id: 2, data: "TypeScript" },
+              { id: 2, data: "RabbitMq" },
+              { id: 3, data: "Web Trader" },
+            ]}
+            link="https://uptrise.com"
+            year="2024"
+            type="Live"
+          />
         </div>
 
         <div

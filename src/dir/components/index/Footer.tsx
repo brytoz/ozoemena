@@ -16,7 +16,7 @@ const Footer: React.FC<FooterProps> = ({id}) => {
         <a target="_blank" href="https://github.com/brytoz">
           <FaGithub className="text-3xl hover:cursor-pointer hover:text-sky-300" />
         </a> 
-        <a target="_blank" href="https://linkedin.com/ozoemenabright">
+        <a target="_blank" href="https://www.linkedin.com/in/ozoemena-bright-6a1a24134/">
           <FaLinkedin className="text-3xl hover:cursor-pointer hover:text-sky-300" />
         </a>
         <a target="_blank" href="https://x.com/bryt_ozee">
