@@ -6,16 +6,21 @@ import { Alumin } from "../components/index/Alumin";
 import Experience from "../components/index/Experience";
 import Tools from "../components/index/Tools";
 import Footer from "../components/index/Footer";
+import Achievements from "../components/index/Achievements";
+import Nav from "../components/Nav";
 
 const Index: React.FC = () => {
   return (
     <Fragment>
+        <Nav />
+
       <Header id="header" />
       <About id="about" />
 
       <Tools id="language" />
       <Experience id="experience" />
       <Project id="projects" />
+      <Achievements id="achievement" />
       <Alumin id="education"/>
 
       <div className="h-24 md:h-32" />

@@ -1,4 +1,5 @@
 import React from "react";
+import { FiExternalLink } from "react-icons/fi";
 
 interface CardsProps {
   topic: string;
@@ -52,9 +53,9 @@ export const Cards: React.FC<CardsProps> = ({
           <a
             href={link}
             target="_blank"
-            className="hover:underline hover:text-blue-300"
+            className="flex justify-center items-center  hover:underline hover:text-blue-300"
           >
-            {topic}
+            {topic} <FiExternalLink className="pl-1"/>
           </a>
         </h3>
         <p className="text-xs my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
@@ -65,7 +66,7 @@ export const Cards: React.FC<CardsProps> = ({
         <div className="mt-6 text-gray-400 flex-wrap flex justify-center space-x-2   pb-4">
         {data &&
             data?.map((x) => (
-              <ul className="mt-3 *:rounded *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10 text-[12px] md:text-xs">
+              <ul className="mt-3 *:rounded *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 text-sky-300 *:border-sky-500/15 *:bg-sky-500/10 text-[12px] md:text-xs">
                 <li>{x.data}</li>
               </ul>
             ))}

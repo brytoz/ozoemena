@@ -12,7 +12,7 @@ const ToolsCard: React.FC<ToolsCardProps> = ({ text }) => {
   return (
     <>
       <div className="block bg-neutral-900/50 text-white p-8    rounded-lg space-y-4">
-        <div className="dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10 *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 rounded-md    ">
+        <div className=" *:border-sky-500/15  *:border *:border-sky-100 *:bg-sky-50 text-sky-300 *:bg-sky-500/10 *:px-2 *:py-0.5 rounded-md    ">
           <div className="  capitalize rounded">
             <p className="p-2"> {text}</p>
           </div>

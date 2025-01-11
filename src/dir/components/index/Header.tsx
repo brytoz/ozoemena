@@ -1,4 +1,4 @@
-import Nav from "../Nav";
+
 
 interface HeaderProps {
   id: string;
@@ -7,12 +7,11 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({id}) => {
     return (
       <div id={`${id}`}  className="relative min-h-screen bg-black text-white font-sans">
-        <Nav />
   
         <header className="mt-24 md:mt-0 bg-black text-white md:h-screen flex flex-col md:flex-row items-center md:justify-between px-6 md:px-20">
           <div className="space-y-12 text-center md:text-left md:w-1/2 md:space-y-6">
             <h1 className="text-6xl md:text-8xl font-serif">
-              Ozoemena Bright C.
+              Ozoemena Bright Chukwuebuka
             </h1>
   
             <button className="mt-4 px-6 py-2 border border-white rounded-full hover:bg-white hover:text-black transition">

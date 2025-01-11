@@ -55,7 +55,7 @@ const Nav: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <div className="w-full    bg-black z-50">
       <nav
         id="nav"
         className={`${
@@ -164,19 +164,36 @@ const Nav: React.FC = () => {
             About
           </a>
           <a
-            href="#background"
+            href="#language"
             className="text-lg"
             onClick={() => setIsMenuOpen(false)}
           >
-            Background
+            Language
           </a>
           <a
-            href="#gallery"
+            href="#experience"
             className="text-lg"
             onClick={() => setIsMenuOpen(false)}
           >
-            Gallery
+            Experience
           </a>
+          <a
+            href="#projects"
+            className="text-lg"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Projects
+          </a>
+          
+          <a
+            href="#achievement"
+            className="text-lg"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Achievements
+          </a>
+          
+
           <a
             href="#contact"
             className="text-lg"
