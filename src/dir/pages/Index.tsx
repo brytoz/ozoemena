@@ -10,16 +10,16 @@ import Footer from "../components/index/Footer";
 const Index: React.FC = () => {
   return (
     <Fragment>
-      <Header />
-      <About />
-      <Alumin />
+      <Header id="header" />
+      <About id="about" />
+
+      <Tools id="language" />
+      <Experience id="experience" />
+      <Project id="projects" />
+      <Alumin id="education"/>
 
       <div className="h-24 md:h-32" />
-      <Tools />
-      <Experience />
-      <Project />
-
-      <Footer />
+      <Footer id="contact"/>
     </Fragment>
   );
 };

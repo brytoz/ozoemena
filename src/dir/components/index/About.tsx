@@ -1,9 +1,13 @@
 import React from "react";
 // import { Camera } from "lucide-react";
+interface AboutProps {
+  id: string;
+}
 
-const About: React.FC = () => {
+
+const About: React.FC<AboutProps> = ({id}) => {
   return (
-    <div className="bg-black ">
+    <div id={`${id}`} className="bg-black ">
       <section className=" space-y-6 w-full block px-6 py-10 md:py-20 md:px-10  bg-neutral-900/30">
         <div className="text-center md:text-left md:space-y-6">
           <h1 className="text-6xl md:text-8xl font-serif pb-8  ">

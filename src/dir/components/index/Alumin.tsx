@@ -1,9 +1,12 @@
 import React from "react";
 import { PiArrowBendDownRightThin } from "react-icons/pi";
+interface AluminProps {
+    id: string;
+  }
 
-export const Alumin: React.FC = () => {
+export const Alumin: React.FC<AluminProps> = ({id}) => {
   return (
-    <div className="w-full  text-white font-sans px-6 md:px-20 my-12 mb-24 ">
+    <div id={`${id}`}  className="w-full  text-white font-sans px-6 md:px-20 my-12 mb-24 ">
       <div className="bg-neutral-900/50 text-center md:text-left md:space-y-6">
         <h1 className="text-6xl md:text-8xl font-serif">Education</h1>
       </div>

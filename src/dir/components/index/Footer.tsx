@@ -4,9 +4,14 @@ import { FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { MdOutlineMailOutline } from "react-icons/md";
 
-const Footer: React.FC = () => {
+interface FooterProps {
+    id: string;
+  }
+
+  
+const Footer: React.FC<FooterProps> = ({id}) => {
   return (
-    <div className="w-full mt-12 p-8">
+    <div id={`${id}`}   className="w-full mt-12 p-8">
       <div className="flex justify-center space-x-6 w-full ">
         <a target="_blank" href="https://github.com/brytoz">
           <FaGithub className="text-3xl hover:cursor-pointer hover:text-sky-300" />
