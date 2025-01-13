@@ -1,14 +1,14 @@
 import React from "react";
 // import { Camera } from "lucide-react";
 
-interface ToolsCardProps {
+interface ServicesCardProps {
   text: string;
 }
 
-interface ToolsProps {
+interface ServicesProps {
   id: string;
 }
-const ToolsCard: React.FC<ToolsCardProps> = ({ text }) => {
+const ServicesCard: React.FC<ServicesCardProps> = ({ text }) => {
   return (
     <>
       <div className="block bg-neutral-900/50 text-white p-8    rounded-lg space-y-4">
@@ -22,38 +22,24 @@ const ToolsCard: React.FC<ToolsCardProps> = ({ text }) => {
   );
 };
 
-const Tools: React.FC<ToolsProps> = ({ id }) => {
+const Services: React.FC<ServicesProps> = ({ id }) => {
   return (
     <div id={`${id}`} className="bg-black ">
       <section className="w-full block px-6 py-10 md:py-20 md:px-10  bg-neutral-900/30">
         <div className="text-center md:text-left md:space-y-6">
           <h1 className="text-6xl md:text-8xl font-serif pb-8">
-            Language & Tools
+            My Services
           </h1>
         </div>
         <div className="flex flex-wrap gap-4 justify-around md:justify-start ">
-          <ToolsCard text="React" />
-          <ToolsCard text="TypeScript" />
-          <ToolsCard text="React Native" />
-          <ToolsCard text="Node Js" />
-          <ToolsCard text="Nest Js" />
-          <ToolsCard text="Solidity" />
-          <ToolsCard text="Ether.JS" />
-          <ToolsCard text="Web3.Js" />
-          <ToolsCard text="PHP" />
-          <ToolsCard text="PHP" />
-          <ToolsCard text="HTML" />
-          <ToolsCard text="CSS" />
-          <ToolsCard text="AWS" />
-          <ToolsCard text="MySQL" />
-          <ToolsCard text="MondoDB" />
-          <ToolsCard text="PostGres" />
-          <ToolsCard text="Firebase" />
-          <ToolsCard text="RabbitMq" />
+          <ServicesCard text="Website Development" />
+          <ServicesCard text="Mobile App Development" />
+          <ServicesCard text="Smart Contract" />
+          <ServicesCard text="Web Server Administration" />
         </div>
       </section>
     </div>
   );
 };
 
-export default Tools;
+export default Services;

@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment } from "react";
 import Header from "../components/index/Header";
 import About from "../components/index/About";
 import Project from "../components/index/Project";
@@ -8,22 +8,11 @@ import Tools from "../components/index/Tools";
 import Footer from "../components/index/Footer";
 import Achievements from "../components/index/Achievements";
 import Nav from "../components/Nav";
+import Services from "../components/index/Services";
 
 const Index: React.FC = () => {
 
-
-  const findMe  =() => {
-
-    const arr = [1,2,3,4,5,6,7,8]
-
-    const newArr = arr.filter((num)=> num > 4)
-    console.log(newArr)
-  }
-
-  useEffect(() => {
-    findMe()
-  
-  }, [])
+ 
   
 
   return (
@@ -34,7 +23,8 @@ const Index: React.FC = () => {
       <About id="about" />
 
       <Tools id="language" />
-      <Experience id="experience" />
+      <Experience id="experience" />  
+      <Services id="services" /> 
       <Project id="projects" />
       <Achievements id="achievement" />
       <Alumin id="education" />

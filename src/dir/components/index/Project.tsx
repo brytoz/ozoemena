@@ -17,27 +17,136 @@ const Project: React.FC<ProjectProps> = ({ id }) => {
           <h1 className="text-6xl md:text-8xl font-serif pb-8">Projects</h1>
           <p className="text-gray-600 ">Some Projects</p>
         </div>
-        <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
           <Cards
-            topic="ByteStore"
-            description="A simple inventory and checkout system for a grocery store. Created with C++. Remains my first ever project worked on. "
-            data={[{ id: 1, data: "C++" }]}
-            link="https://github.com/brytoz/ByteStore"
-            year="2018"
+            topic="Uptrise"
+            description="A crypto web trading application. Designed and developed the backend infrastructure, services, payment system and server administration setup."
+            data={[
+              { id: 1, data: "Backend" },
+              { id: 2, data: "TypeScript" },
+              { id: 2, data: "RabbitMq" },
+              { id: 3, data: "Web Trader" },
+            ]}
+            link="https://uptrise.com"
+            year="2024"
+            type="Live"
+          />
+
+          <Cards
+            topic="SecureSeedFund"
+            description="Designed and developed the backend infrastructure, services, payment system and server administration setup."
+            data={[
+              { id: 1, data: "Backend" },
+              // { id: 1, data: "Redacted" },
+            ]}
+            link="https://secureseedfund.com"
+            year="2024"
+            type="Live"
+          />
+
+          <Cards
+            topic="KMAnalysis"
+            description="Sport prediction website. Contributed to the frontend, worked on the backend."
+            data={[
+              // { id: 1, data: "TypeScript" },
+              { id: 2, data: "Backend" },
+              { id: 2, data: "React" },
+            ]}
+            link="https://kmanalysis.com"
+            year="2023-2024"
+            type="Live"
+          />
+
+          <Cards
+            topic="Gigscor"
+            description="Web Application for getting jobs. worked on the backend, contributed to the frontend"
+            data={[
+              // { id: 1, data: "TypeScript" },
+              { id: 2, data: "CMS" },
+              { id: 2, data: "Backend" },
+            ]}
+            link="https://gigscor.com"
+            year="2023-2024"
+            type="Live"
+          />
+
+          <Cards
+            topic="LcCredit"
+            description="Contributed to a financial loan app. Worked on the frontend design and structural architecture."
+            data={[
+              { id: 2, data: "Typescript" },
+              { id: 1, data: "MobileApp" },
+            ]}
+            link="#"
+            year="2024"
+            type="Live"
+          />
+
+          <Cards
+            topic="LoveAfrica"
+            description="Dating mobile app. social network that connects friends and strangers together. Creating  "
+            data={[
+              { id: 1, data: "Mobile App" },
+              { id: 2, data: "Fullstack" },
+            ]}
+            link="https://loveafrica.app/downloads"
+            year="2022"
+            type="Live"
+          />
+
+          <Cards
+            topic="EasyStreams"
+            description="A fullstack video streaming website that shows list of available matches and streaming platforms to view the matches. Previously live at easystreams.com"
+            data={[
+              { id: 1, data: "React" },
+              { id: 3, data: "NodeJs" },
+              { id: 4, data: "MySql" },
+              // { id: 3, data: "Fullstack" },
+            ]}
+            link="https://github.com/brytoz/easystreams"
+            year="2023"
+            type="Github"
+          />
+
+          <Cards
+            topic="Mutant Football Manager"
+            description="A ERC-721 and ERC-20 web3 project. A Hackhathon participated with a section of my team. Using the Harmony ONE protocol."
+            data={[
+              { id: 3, data: "TypeScript" },
+              { id: 1, data: "Web3" },
+              { id: 4, data: "Solidity" },
+              { id: 2, data: "Ether.Js" },
+            ]}
+            link="https://mutant-football.netlify.app"
+            year="2021"
             type="Demo"
           />
 
           <Cards
-            topic="FFMpeg"
-            description="A vanilla video editing made with ffmpeg and php. This app has low design but was more focused on the backend."
+            topic="Mint My Token"
+            description="A ERC-721 web3 project that mints your token. using the Harmony ONE protocol."
             data={[
-              { id: 1, data: "HTML" },
-              { id: 1, data: "CSS" },
-              { id: 2, data: "PHP" },
-              { id: 3, data: "FFMpeg" },
+              { id: 3, data: "TypeScript" },
+              { id: 1, data: "Web3" },
+              { id: 4, data: "Solidity" },
+              { id: 2, data: "Ether.Js" },
             ]}
-            link="https://github.com/brytoz/FFmpeg-Image-video"
-            year="2019"
+            link="https://mintmytoken.netlify.app"
+            year="2022"
+            type="Live/Demo"
+          />
+
+          <Cards
+            topic="Anameo"
+            description="A play-around frontend application focused on API fetch and sorting chuck noris jokes."
+            data={[
+              { id: 1, data: "TypeScript" },
+              { id: 3, data: "React" },
+              // { id: 4, data: "MySql" },
+              // { id: 3, data: "Fullstack" },
+            ]}
+            link="https://anameo.netlify.app"
+            year="2022"
             type="Demo"
           />
 
@@ -57,134 +166,26 @@ const Project: React.FC<ProjectProps> = ({ id }) => {
           />
 
           <Cards
-            topic="Anameo"
-            description="A play-around frontend application focused on API fetch and sorting chuck noris jokes."
+            topic="FFMpeg"
+            description="A vanilla video editing made with ffmpeg and php. This app has low design but was more focused on the backend."
             data={[
-              { id: 1, data: "TypeScript" },
-              { id: 3, data: "React" },
-              // { id: 4, data: "MySql" },
-              // { id: 3, data: "Fullstack" },
+              { id: 1, data: "HTML" },
+              { id: 1, data: "CSS" },
+              { id: 2, data: "PHP" },
+              { id: 3, data: "FFMpeg" },
             ]}
-            link="https://anameo.netlify.app"
-            year="2022"
+            link="https://github.com/brytoz/FFmpeg-Image-video"
+            year="2019"
             type="Demo"
           />
 
           <Cards
-            topic="Mint My Token"
-            description="A ERC-721 web3 project that mints your token. using the Harmony ONE protocol."
-            data={[
-              { id: 3, data: "TypeScript" },
-              { id: 1, data: "Web3" },
-              { id: 4, data: "Solidity" },
-              { id: 2, data: "Ether.Js" },
-            ]}
-            link="https://mintmytoken.netlify.app"
-            year="2022"
-            type="Live/Demo"
-          />
-
-          <Cards
-            topic="Mutant Football Manager"
-            description="A ERC-721 and ERC-20 web3 project. A Hackhathon participated with a section of my team. Using the Harmony ONE protocol."
-            data={[
-              { id: 3, data: "TypeScript" },
-              { id: 1, data: "Web3" },
-              { id: 4, data: "Solidity" },
-              { id: 2, data: "Ether.Js" },
-            ]}
-            link="https://mutant-football.netlify.app"
-            year="2022"
+            topic="ByteStore"
+            description="A simple inventory and checkout system for a grocery store. Created with C++. Remains my first ever project worked on. "
+            data={[{ id: 1, data: "C++" }]}
+            link="https://github.com/brytoz/ByteStore"
+            year="2018"
             type="Demo"
-          />
-          <Cards
-            topic="EasyStreams"
-            description="A fullstack video streaming website that shows list of available matches and streaming platforms to view the matches. Previously live at easystreams.com"
-            data={[
-              { id: 1, data: "React" },
-              { id: 3, data: "NodeJs" },
-              { id: 4, data: "MySql" },
-              // { id: 3, data: "Fullstack" },
-            ]}
-            link="https://github.com/brytoz/easystreams"
-            year="2023"
-            type="Github"
-          />
-
-          <Cards
-            topic="LoveAfrica"
-            description="Dating mobile app. social network that connects friends and strangers together. Creating  "
-            data={[
-              { id: 1, data: "Mobile App" },
-              { id: 2, data: "Fullstack" },
-            ]}
-            link="https://loveafrica.app/downloads"
-            year="2022"
-            type="Live"
-          />
-
-          <Cards
-            topic="LcCredit"
-            description="Contributed to a financial loan app. Worked on the frontend design and structural architecture."
-            data={[
-              { id: 2, data: "Typescript" },
-              { id: 1, data: "MobileApp" },
-            ]}
-            link="#"
-            year="2024"
-            type="Live"
-          />
-
-          <Cards
-            topic="Gigscor"
-            description="Web Application for getting jobs. worked on the backend, contributed to the frontend"
-            data={[
-              // { id: 1, data: "TypeScript" },
-              { id: 2, data: "CMS" },
-              { id: 2, data: "Backend" },
-            ]}
-            link="https://gigscor.com"
-            year="2023-2024"
-            type="Live"
-          />
-
-          <Cards
-            topic="KMAnalysis"
-            description="Sport prediction website. Contributed to the frontend, worked on the backend."
-            data={[
-              // { id: 1, data: "TypeScript" },
-              { id: 2, data: "Backend" },
-              { id: 2, data: "React" },
-            ]}
-            link="https://kmanalysis.com"
-            year="2023-2024"
-            type="Live"
-          />
-
-          <Cards
-            topic="SecureSeedFund"
-            description="Designed and developed the backend infrastructure, services, payment system and server administration setup."
-            data={[
-              { id: 1, data: "Backend" },
-              // { id: 1, data: "Redacted" },
-            ]}
-            link="https://secureseedfund.com"
-            year="2024"
-            type="Live"
-          />
-
-          <Cards
-            topic="Uptrise"
-            description="A crypto web trading application. Designed and developed the backend infrastructure, services, payment system and server administration setup."
-            data={[
-              { id: 1, data: "Backend" },
-              { id: 2, data: "TypeScript" },
-              { id: 2, data: "RabbitMq" },
-              { id: 3, data: "Web Trader" },
-            ]}
-            link="https://uptrise.com"
-            year="2024"
-            type="Live"
           />
         </div>
 

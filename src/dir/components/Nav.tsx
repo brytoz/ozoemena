@@ -80,12 +80,12 @@ const Nav: React.FC = () => {
           </Link>
 
           <Link
-            to="language"
+            to="services"
             smooth={true}
             duration={500}
             className="hover:underline"
           >
-            Language
+            Services
           </Link>
 
           <Link
@@ -159,11 +159,11 @@ const Nav: React.FC = () => {
             About
           </a>
           <a
-            href="#language"
+            href="#services"
             className="text-lg"
             onClick={() => setIsMenuOpen(false)}
           >
-            Language
+            Services
           </a>
           <a
             href="#experience"

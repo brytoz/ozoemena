@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({id}) => {
             </h1>
   
             <button className="mt-4 px-6 py-2 border border-white rounded-full hover:bg-white hover:text-black transition">
-              Fullstack Developer |  Mobile App Developer
+              Fullstack |  Mobile App | Web3 Developer
             </button>
           </div>
   

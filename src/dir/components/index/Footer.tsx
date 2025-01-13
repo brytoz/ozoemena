@@ -33,3 +33,10 @@ const Footer: React.FC<FooterProps> = ({id}) => {
 };
 
 export default Footer;
+
+
+
+
+
+
+
