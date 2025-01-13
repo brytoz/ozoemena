@@ -29,7 +29,7 @@ const Achievements: React.FC<AchievementsProps> = ({ id }) => {
 
           <ExpeCard
             company="Developer Instructor"
-            position="NCloud Technologies"
+            position="Neo Cloud Technologies"
             year="2024"
             info="Abuja"
           />
