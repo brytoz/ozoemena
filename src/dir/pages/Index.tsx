@@ -11,10 +11,7 @@ import Nav from "../components/Nav";
 import Services from "../components/index/Services";
 
 const Index: React.FC = () => {
-
  
-  
-
   return (
     <Fragment>
       <Nav />
