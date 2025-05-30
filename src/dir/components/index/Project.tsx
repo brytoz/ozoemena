@@ -18,14 +18,27 @@ const Project: React.FC<ProjectProps> = ({ id }) => {
           <p className="text-gray-600 ">Some Projects</p>
         </div>
         <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
-          <Cards
+
+        <Cards
+            topic="Forlive"
+            description="Developed a procter and Gamble-like LLM model for the application. This model learns and guide user on making inform bets and gamble management. In-app usage."
+            data={[
+              { id: 1, data: "Backend" },
+              { id: 3, data: "Python" },
+            ]}
+            link="https://forlive.app"
+            year="2024/25"
+            type="Live"
+          />
+
+        <Cards
             topic="Uptrise"
-            description="A crypto web trading application. Designed and developed the backend infrastructure, services, payment system and server administration setup."
+            description="A crypto web-trading application. Designed and developed the backend infrastructure, services (with NestJs & Python), payment system and server administration setup."
             data={[
               { id: 1, data: "Backend" },
               { id: 2, data: "TypeScript" },
-              { id: 2, data: "RabbitMq" },
-              { id: 3, data: "Web Trader" },
+              { id: 3, data: "Python" },
+              { id: 4, data: "Web Trader" },
             ]}
             link="https://uptrise.com"
             year="2024"
@@ -37,7 +50,7 @@ const Project: React.FC<ProjectProps> = ({ id }) => {
             description="Designed and developed the backend infrastructure, services, payment system and server administration setup."
             data={[
               { id: 1, data: "Backend" },
-              // { id: 1, data: "Redacted" },
+              // { id: 1, data: "Typescript" },
             ]}
             link="https://secureseedfund.com"
             year="2024"
@@ -62,7 +75,7 @@ const Project: React.FC<ProjectProps> = ({ id }) => {
             description="Web Application for getting jobs. worked on the backend, contributed to the frontend"
             data={[
               // { id: 1, data: "TypeScript" },
-              { id: 2, data: "CMS" },
+              { id: 2, data: "SAAS" },
               { id: 2, data: "Backend" },
             ]}
             link="https://gigscor.com"
@@ -136,7 +149,7 @@ const Project: React.FC<ProjectProps> = ({ id }) => {
             type="Live/Demo"
           />
 
-          <Cards
+          {/* <Cards
             topic="Anameo"
             description="A play-around frontend application focused on API fetch and sorting chuck noris jokes."
             data={[
@@ -148,14 +161,14 @@ const Project: React.FC<ProjectProps> = ({ id }) => {
             link="https://anameo.netlify.app"
             year="2022"
             type="Demo"
-          />
+          /> */}
 
           <Cards
             topic="Thesis Mgt System"
             description="School thesis management system. A fullstack vanilla project that manages postgraduate and masters student for thesis submission, approval and grading. Uploaded to github in 2022"
             data={[
-              { id: 1, data: "HTML" },
-              { id: 2, data: "CSS" },
+              // { id: 1, data: "HTML" },
+              // { id: 2, data: "CSS" },
               { id: 3, data: "PHP" },
               { id: 4, data: "MySql" },
               // { id: 3, data: "Fullstack" },

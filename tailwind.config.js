@@ -11,6 +11,15 @@ export default {
         sans: ['Poppins', 'sans-serif'], 
         oblique: 'oblique',
       },
+      keyframes: {
+        'netflix-in': {
+          '0%': { opacity: 0, transform: 'translateY(50px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'netflix-in': 'netflix-in 1s ease-out forwards',
+      },
     },
   },
   plugins: [],

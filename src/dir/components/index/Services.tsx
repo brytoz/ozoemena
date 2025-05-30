@@ -32,9 +32,9 @@ const Services: React.FC<ServicesProps> = ({ id }) => {
           </h1>
         </div>
         <div className="flex flex-wrap gap-4 justify-around md:justify-start ">
-          <ServicesCard text="Website Development" />
+          <ServicesCard text="Web Development" />
           <ServicesCard text="Mobile App Development" />
-          <ServicesCard text="Smart Contract" />
+          <ServicesCard text="Backend Development" />
           <ServicesCard text="Web Server Administration" />
         </div>
       </section>

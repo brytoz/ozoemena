@@ -37,18 +37,17 @@ const Tools: React.FC<ToolsProps> = ({ id }) => {
           <ToolsCard text="React Native" />
           <ToolsCard text="Node Js" />
           <ToolsCard text="Nest Js" />
-          <ToolsCard text="Solidity" />
+          <ToolsCard text="Python" />
           <ToolsCard text="Ether.JS" />
-          <ToolsCard text="Web3.Js" />
           <ToolsCard text="PHP" />
-          <ToolsCard text="PHP" />
-          <ToolsCard text="HTML" />
-          <ToolsCard text="CSS" />
+          <ToolsCard text="Docker" />
+          <ToolsCard text="Git" />
+          <ToolsCard text="Redis" />
+          <ToolsCard text="LLM" />
           <ToolsCard text="AWS" />
           <ToolsCard text="MySQL" />
           <ToolsCard text="MondoDB" />
           <ToolsCard text="PostGres" />
-          <ToolsCard text="Firebase" />
           <ToolsCard text="RabbitMq" />
         </div>
       </section>

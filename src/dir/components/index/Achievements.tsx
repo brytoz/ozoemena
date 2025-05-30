@@ -39,6 +39,12 @@ const Achievements: React.FC<AchievementsProps> = ({ id }) => {
             year="2024 - 2025"
             info="Abuja"
           />
+            <ExpeCard
+            company="Certificate"
+            position="Computer Professionals of Nigeria."
+            year="2025"
+            info="Registration Council of Nigeria"
+          />
         </div>
       </section>
     </div>
